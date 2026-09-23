@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { CarInventoryPage } from "@/features/cars/pages/CarInventoryPage";
 import { Brief } from "@/pages/Brief";
 
 /**
@@ -8,7 +9,8 @@ import { Brief } from "@/pages/Brief";
 export const AppRouter = () => (
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Brief />} />
+      <Route path="/" element={<CarInventoryPage />} />
+      <Route path="/brief" element={<Brief />} />
     </Routes>
   </BrowserRouter>
 );

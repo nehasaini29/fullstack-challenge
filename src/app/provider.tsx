@@ -5,10 +5,19 @@ import { apolloClient } from "@/lib/apollo";
 
 const theme = createTheme({
   palette: {
-    primary: { main: "#0b5cd5" },
-    background: { default: "#f7f7f8" },
+    primary: { main: "#246bfd" },
+    background: { default: "#f4f6f8", paper: "#ffffff" },
   },
   shape: { borderRadius: 8 },
+  typography: {
+    fontFamily: 'Inter, "Helvetica Neue", Arial, sans-serif',
+    h3: { letterSpacing: "-0.035em" },
+  },
+  components: {
+    MuiButton: { styleOverrides: { root: { textTransform: "none", fontWeight: 650 } } },
+    MuiCard: { styleOverrides: { root: { borderColor: "#dde2e7" } } },
+    MuiPaper: { styleOverrides: { root: { backgroundImage: "none" } } },
+  },
 });
 
 /**
